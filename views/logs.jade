@@ -41,7 +41,7 @@ html(lang="en")
                                 if key != 'level' && key != 'message' && key != 'timestamp'
                                     div
                                         strong= key
-                                        div(style="word-wrap: break-word;")= JSON.stringify(value)
+                                        pre(style="word-wrap: break-word;")= JSON.stringify(value, null, 2)
             if pages.length > 1
                 nav
                     ul.pagination
